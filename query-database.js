@@ -81,6 +81,9 @@ module.exports = function (RED) {
                   }))
                 : [];
               break;
+            case "number":
+              result[prop] = properties[prop].number;
+              break;
             case "title":
               result[prop] = properties[prop].title;
               break;
